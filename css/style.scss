@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+#title{
+    background:#ff4c68;
+    color:#fff;
+    .container-fluid{
+        padding:3% 15%;
+        padding-bottom:7%;
+    }
+    .navbar-brand{
+        font-size:2.5rem;
+        font-weight:bold;
+    }
+    .navbar{
+        padding:0;
+        padding-bottom:2.5rem;
+        .nav-item{
+            padding:0 18px;
+            .nav-link{
+                font-size:1.2rem;
+                font-weight:bold;
+            }
+        }
+    }
+    // .navbar{
+    //     padding:50px 150px 50px 150px;
+    // }
+    .padding-fluid-one{
+        padding-left:22px;
+        padding-right:50px;
+    }
+    h1{
+        font-size:3rem;
+        line-height:1.5;
+    }
+    .row{
+        .rotate-img{
+            transform:rotate(25deg);
+            width:60%;
+            position:absolute;
+            left:50px;
+        }   
+    }
+    .to-top{
+        background:#ff4c68;
+        position:fixed;
+        bottom:16px;
+        right:32px;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:32px;
+        color:#222831;
+        text-decoration:none;
+        opacity:0;
+        pointer-events:none;
+        transition:all .5s;
+    }
+    .to-top.active{
+        bottom:32px;
+        pointer-events:auto;
+        opacity:1;
+    }
+    $breakpoints-lg:1028px;
+    @media(max-width:--$breakpoints-lg){
+        .rotate-img{
+            position:static;
+            transform:rotate(0);
+        }
+    }
+}
+#features{
+    position:relative;
+    background:#fff;
+    padding:10% 15%;
+    .fa-check-circle{
+        color:#ff4c68;
+    }
+    .fa-bullseye{
+        color:#ff4c68;
+    }
+    .fa-heart{
+        color:#ff4c68;
+    }
+    i:hover{
+        color:#ef8172;
+    }
+    .row{
+        z-index:10;
+    }
+}
+
+#testimonials{
+    background:#ef8172;
+    color:#fff;
+    padding:100px 50px 100px 50px;
+    text-align:center;
+    h2{
+        padding-bottom:2%;
+    }
+    em{
+        padding-left:2%;
+    }
+    a{
+        padding-top:1%;
+    }
+    .radius-img{
+        border-radius:50%;
+        width:100px;
+        height:100px;
+    }
+}
+#press{
+    background:#ef8172;
+    text-align:center;
+    padding-bottom:3%;
+}
+#pricing{
+    padding-top:50px;
+}
+#cta{
+    padding:10%;
+    background:#ff4c68;
+    text-align:center;
+    .text-light{
+        padding-bottom:2%;
+    }
+}
+#footer{
+    text-align:center;
+    padding:7% 15%;
+    h4{
+        text-align:center;
+    }
+    .social-icon{
+        margin:20px 10px;
+        transition:.5s;
+        cursor: pointer;
+    }
+    .social-icon:hover{
+        color:#ff4c68;
+    }
+}
